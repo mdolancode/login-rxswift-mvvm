@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
@@ -22,5 +24,16 @@ class ViewController: UIViewController {
         print("login button pressed")
     }
     
+}
+
+class LoginViewModel {
+    let usernameTextPublishSubject = PublishSubject<String>()
+    let passwordTextPublishSubject = PublishSubject<String>()
+    
+    func isValid() -> Observable<Bool> {
+        return Observable.combineLatest(usernameTextPublishSubject.asObservable(), passwordTextPublishSubject.asObservable()).map { username, password in
+            return username.count > 3 && password.count > 3
+        }
+    }
 }
 
