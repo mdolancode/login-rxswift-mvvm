@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         loginButtonEnabled()
-        checkValueForLoginButton()
+        sendValueForLogin()
     }
     
     func sendValueForLogin() {
