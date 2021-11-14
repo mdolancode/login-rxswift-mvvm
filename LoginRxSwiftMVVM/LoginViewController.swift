@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  LoginRxSwiftMVVM
 //
 //  Created by Matthew Dolan on 2021-11-10.
@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     private let loginViewModel = LoginViewModel()
     private let disposeBag = DisposeBag()
