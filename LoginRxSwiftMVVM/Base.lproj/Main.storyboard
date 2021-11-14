@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,30 +13,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginRxSwiftMVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Login App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mo-UL-kbK">
+                                <rect key="frame" x="15" y="244" width="384" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tC6-TR-ifU">
-                                <rect key="frame" x="15" y="100" width="570" height="189.5"/>
+                                <rect key="frame" x="15" y="374" width="384" height="148"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Login App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mo-UL-kbK">
-                                        <rect key="frame" x="0.0" y="0.0" width="570" height="26.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="43U-j9-0J7">
-                                        <rect key="frame" x="0.0" y="41.5" width="570" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qIH-KZ-sO7">
-                                        <rect key="frame" x="0.0" y="90.5" width="570" height="34"/>
+                                        <rect key="frame" x="0.0" y="49" width="384" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-zl-6wv">
-                                        <rect key="frame" x="0.0" y="139.5" width="570" height="50"/>
+                                        <rect key="frame" x="0.0" y="98" width="384" height="50"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="mpx-BI-hZu"/>
@@ -60,8 +61,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tC6-TR-ifU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="0xr-yp-DMH"/>
+                            <constraint firstItem="1mo-UL-kbK" firstAttribute="trailing" secondItem="tC6-TR-ifU" secondAttribute="trailing" id="3mz-iv-MoK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tC6-TR-ifU" secondAttribute="trailing" constant="15" id="6KA-Dg-6v5"/>
-                            <constraint firstItem="tC6-TR-ifU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="FrW-Vk-k2m"/>
+                            <constraint firstItem="tC6-TR-ifU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7c4-ra-x9F"/>
+                            <constraint firstItem="1mo-UL-kbK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="Emo-sc-k3E"/>
+                            <constraint firstItem="1mo-UL-kbK" firstAttribute="leading" secondItem="tC6-TR-ifU" secondAttribute="leading" id="Ihw-Bv-iE1"/>
                         </constraints>
                     </view>
                     <connections>
